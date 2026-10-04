@@ -1,0 +1,143 @@
+{
+  "retrieved": "2026-10-03",
+  "projection": "Equirectangular, west to east -180 to +180 longitude, north at top. Maps share conventional geographic alignment; verified visually.",
+  "assets": [
+    {
+      "filename": "earth_day_4096.jpg",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/earth_day_4096.jpg",
+      "role": "surface color",
+      "size": [
+        4096,
+        2048
+      ],
+      "bytes": 473093,
+      "sha256": "cd7712d3e891425d9948ea5ac18d3bb1e7e834ea038188587897e689a7b35d0f",
+      "source_url": "https://threejs.org/examples/textures/planets/earth_day_4096.jpg",
+      "license": "CC BY 4.0",
+      "credit": "Solar System Scope / INOVE, based on NASA Blue Marble; resized by Three.js contributors",
+      "changes": "Downloaded unchanged"
+    },
+    {
+      "filename": "earth_night_4096.jpg",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/earth_night_4096.jpg",
+      "role": "night lights",
+      "size": [
+        4096,
+        2048
+      ],
+      "bytes": 267061,
+      "sha256": "17a868f79c7be40fa1f557e6114d7889d907f18f7a3fce51f33b0b830ef50242",
+      "source_url": "https://threejs.org/examples/textures/planets/earth_night_4096.jpg",
+      "license": "CC BY 4.0",
+      "credit": "Solar System Scope / INOVE, based on NASA imagery; resized by Three.js contributors",
+      "changes": "Downloaded unchanged"
+    },
+    {
+      "filename": "earth_bump_roughness_clouds_4096.jpg",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/earth_bump_roughness_clouds_4096.jpg",
+      "role": "packed masks: R=height, G=roughness, B=clouds",
+      "size": [
+        4096,
+        2048
+      ],
+      "bytes": 1508389,
+      "sha256": "0796f4211c209d1afe9e26a06a283cdc21434430a780a25457b2417568a8591e",
+      "source_url": "https://threejs.org/examples/textures/planets/earth_bump_roughness_clouds_4096.jpg",
+      "license": "CC BY 4.0",
+      "credit": "Solar System Scope / INOVE; resized and merged by Three.js contributors",
+      "changes": "Downloaded unchanged"
+    },
+    {
+      "filename": "earth_height_4096.jpg",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/earth_height_4096.jpg",
+      "role": "height/bump mask",
+      "size": [
+        4096,
+        2048
+      ],
+      "bytes": 1553253,
+      "sha256": "427e7b6ae402950c3ea79e54fe31595ab5551396842bdd46db73a1e7348c7f3e",
+      "source_url": "https://threejs.org/examples/textures/planets/earth_bump_roughness_clouds_4096.jpg",
+      "license": "CC BY 4.0",
+      "credit": "Solar System Scope / INOVE; Three.js contributors",
+      "changes": "Red channel extracted, JPEG quality 95"
+    },
+    {
+      "filename": "earth_roughness_4096.jpg",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/earth_roughness_4096.jpg",
+      "role": "roughness / land mask",
+      "size": [
+        4096,
+        2048
+      ],
+      "bytes": 1481515,
+      "sha256": "e0d08463562b3c77e8bc76b9f9c924443307c46c1b3285ea8cb27e2ebe0388d4",
+      "source_url": "https://threejs.org/examples/textures/planets/earth_bump_roughness_clouds_4096.jpg",
+      "license": "CC BY 4.0",
+      "credit": "Solar System Scope / INOVE; Three.js contributors",
+      "changes": "Green channel extracted, JPEG quality 95"
+    },
+    {
+      "filename": "earth_clouds_4096.jpg",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/earth_clouds_4096.jpg",
+      "role": "cloud opacity mask",
+      "size": [
+        4096,
+        2048
+      ],
+      "bytes": 2684742,
+      "sha256": "9929d81f7adf50898f6e724d506eeee85e1594b9679ee6551a363eb4437aaeb6",
+      "source_url": "https://threejs.org/examples/textures/planets/earth_bump_roughness_clouds_4096.jpg",
+      "license": "CC BY 4.0",
+      "credit": "Solar System Scope / INOVE; Three.js contributors",
+      "changes": "Blue channel extracted, JPEG quality 95"
+    },
+    {
+      "filename": "nasa_topography_4096.jpg",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/nasa_topography_4096.jpg",
+      "role": "global land topography grayscale, source scale 0 to 6400 meters",
+      "size": [
+        4096,
+        2048
+      ],
+      "bytes": 641766,
+      "sha256": "644a04c6cf89c41e0a998df359574a0188b750556313c605014cbc148b82a5f5",
+      "source_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/topography/gebco_08_rev_elev_5400x2700.jpg",
+      "license": "NASA media generally not copyrighted in the US",
+      "credit": "NASA Earth Observatory / Jesse Allen; GEBCO / British Oceanographic Data Centre",
+      "changes": "Downsampled source 5400x2700 to 4096x2048 with Lanczos, JPEG quality 95"
+    },
+    {
+      "filename": "nasa_bathymetry_4096.jpg",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/nasa_bathymetry_4096.jpg",
+      "role": "global ocean depth grayscale, source scale -8000 to 0 meters",
+      "size": [
+        4096,
+        2048
+      ],
+      "bytes": 1556655,
+      "sha256": "1830349cdcbc5dae56a1207b3a45f5bc71d0cb94b5e2c831adeabb650fccee12",
+      "source_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/bathymetry/gebco_08_rev_bath_5400x2700.jpg",
+      "license": "NASA media generally not copyrighted in the US",
+      "credit": "NASA Earth Observatory / Jesse Allen; GEBCO / British Oceanographic Data Centre",
+      "changes": "Downsampled source 5400x2700 to 4096x2048 with Lanczos, JPEG quality 95"
+    }
+  ],
+  "source_pages": [
+    "https://www.solarsystemscope.com/textures/",
+    "https://threejs.org/examples/webgpu_tsl_earth.html",
+    "https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/topography-bathymetry-maps/"
+  ],
+  "license_pages": [
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+  ],
+  "notes": [
+    "Day and night maps are educational composites rather than a current snapshot; cloud mask is illustrative static cover, not live weather.",
+    "Solar System Scope adjusts colors and seasonal vegetation/snow from NASA Blue Marble and other imagery.",
+    "Set day/night texture colorSpace to SRGBColorSpace in Three.js; masks remain linear/NoColorSpace.",
+    "Use cloud JPEG as alphaMap on white transparent sphere; black transparent and white opaque.",
+    "Height and roughness channels verified from Three.js reference source.",
+    "NASA topography and bathymetry are scientific visualizations; do not imply survey-grade precision from JPEG values."
+  ]
+}

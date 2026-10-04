@@ -1,0 +1,118 @@
+{
+  "name": "terra",
+  "productName": "TERRA Erdatlas",
+  "version": "1.0.0",
+  "description": "TERRA – interaktiver 3D-Erdatlas: Planet, Erdinneres, Tektonik, Zeitreise, Erdbeben und Lernexpeditionen",
+  "author": "DGKN@Labs",
+  "license": "MIT",
+  "homepage": "https://github.com/dogenc/TERRA",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win --publish never",
+    "dist:mac": "electron-builder --mac --publish never",
+    "dist:linux": "electron-builder --linux --publish never"
+  },
+  "build": {
+    "appId": "de.dgknlabs.terra",
+    "productName": "TERRA Erdatlas",
+    "copyright": "© 2026 DGKN Labs · Code MIT · Datensätze mit eigenen Lizenzen, siehe NOTICE.md",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "package.json",
+      "build/icon.png"
+    ],
+    "extraResources": [
+      {
+        "from": "../dist",
+        "to": "app",
+        "filter": [
+          "**/*",
+          "!_headers"
+        ]
+      },
+      {
+        "from": "../LICENSE",
+        "to": "LICENSE.txt"
+      },
+      {
+        "from": "../dist/NOTICE.md",
+        "to": "NOTICE.md"
+      },
+      {
+        "from": "../RECHTLICHES.md",
+        "to": "RECHTLICHES.md"
+      }
+    ],
+    "artifactName": "TERRA-${version}-${os}-${arch}.${ext}",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png"
+    },
+    "portable": {
+      "artifactName": "TERRA-${version}-Windows-portable.exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "TERRA Erdatlas",
+      "artifactName": "TERRA-${version}-Windows-Setup.exe"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "universal"
+          ]
+        }
+      ],
+      "category": "public.app-category.education",
+      "icon": "build/icon.png",
+      "identity": "-",
+      "artifactName": "TERRA-${version}-macOS.${ext}",
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false
+    },
+    "dmg": {
+      "title": "TERRA Erdatlas"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Education",
+      "icon": "build/icon.png",
+      "artifactName": "TERRA-${version}-Linux.${ext}"
+    }
+  },
+  "devDependencies": {
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dogenc/TERRA.git"
+  }
+}

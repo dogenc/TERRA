@@ -1,0 +1,11 @@
+.sites-runtime/
+node_modules/
+.DS_Store
+__pycache__/
+*.tar.gz
+test-results/
+desktop/release/
+Thumbs.db
+
+# Private Instagram-/Werbematerial gehört nicht ins Repository
+docs/instagram/

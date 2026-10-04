@@ -1,0 +1,63 @@
+TERRA – DER INTERAKTIVE ERDATLAS v1
+===================================
+
+Vollständige Webanwendung mit 3D-Globus, Erdinnerem, Plattentektonik,
+Zeitreise über 250 Millionen Jahre, Erdbebenatlas und vier Lernexpeditionen,
+inklusive Quellcode, Erdtexturen, geologischen Datensätzen und lokal
+mitgelieferter three.js-Bibliothek. Keine API-Schlüssel und keine
+Administratorrechte nötig.
+
+AM EINFACHSTEN: DESKTOP-APP
+Unter „Releases“ auf GitHub:
+- Windows (Installation):        TERRA-<Version>-Windows-Setup.exe
+- Windows (ohne Installation):   TERRA-<Version>-Windows-portable.exe
+- macOS (Intel & Apple Silicon): TERRA-<Version>-macOS.dmg
+Kein Python und kein Webserver nötig. Die Apps sind nicht kostenpflichtig
+signiert; beim ersten Start erscheint deshalb eine Systemwarnung (Hinweise
+im jeweiligen Release).
+
+AUF DEM HANDY
+Am iPhone in Safari: Teilen → Zum Home-Bildschirm.
+
+LOKAL AUF WINDOWS
+1. ZIP vollständig entpacken.
+2. Voraussetzung: Python 3 ist installiert und über „py“ erreichbar.
+3. START_WINDOWS.cmd doppelklicken. Der Browser öffnet sich automatisch.
+4. Das Konsolenfenster während der Nutzung offen lassen. Strg+C beendet
+   den lokalen Server. Er ist nur auf diesem Computer erreichbar.
+   Falls „py“ fehlt, aber „python“ funktioniert: python start.py ausführen.
+
+LOKAL AUF LINUX / macOS
+Im entpackten TERRA-Ordner ausführen:
+    python3 start.py
+Benötigt vorhandenes Python 3; keine zusätzlichen Python-Pakete.
+Adresse: http://127.0.0.1:8767
+
+WICHTIG
+index.html nicht direkt per Doppelklick öffnen. JavaScript-Module und
+Datensätze benötigen einen HTTP-Server. Für eigenes Hosting: „dist“ als
+Website-Wurzel verwenden, nicht als Unterverzeichnis. Für Offline-Speicherung
+außerhalb von localhost ist HTTPS erforderlich.
+
+OFFLINE
+Beim lokalen Start und in der Desktop-App werden alle Dateien vom Computer
+bereitgestellt. Nur der aktuelle USGS-Erdbebenabruf und externe Quellenlinks
+benötigen Internet; ohne Verbindung zeigt TERRA einen gekennzeichneten
+Archivstand. „Offline speichern“ verwendet den Browserspeicher; dieser kann
+vom Browser bei Platzmangel gelöscht werden.
+
+UMFANG UND GRENZEN
+- Erdschichten und Plattenmechanismen sind didaktisch vereinfacht.
+- Zeitreise: rekonstruierte heutige Konturen (GPlates, ZAHIROVIC2022),
+  keine tatsächlichen damaligen Küsten oder Landschaften.
+- Erdbebendaten sind keine Gefahrenprognose.
+- Texte sind KI-unterstützt erstellt und nicht redaktionell abgenommen.
+- Browser benötigt WebGL2 und JavaScript-Module/Importmaps. Ein aktueller
+  Browser ist empfehlenswert.
+
+LIZENZEN
+Code und eigene Lehrmodelle: MIT (LICENSE).
+Datensätze mit eigenen Lizenzen (NASA, PB2002 ODC-By 1.0,
+GPlates/EarthByte CC BY 4.0 / CC BY 3.0, USGS): dist/NOTICE.md.
+three.js: MIT (dist/vendor/LICENSE).
+Rechtliche Hinweise: RECHTLICHES.md.

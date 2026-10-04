@@ -1,0 +1,61 @@
+name: Atlas quality
+on:
+  push:
+    branches: [main]
+    paths: ['dist/**', 'tests/**', 'desktop/**', '.github/workflows/atlas-quality.yml']
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  atlas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install test tools
+        run: npm install --no-save --package-lock=false playwright@1.62.1
+      - name: Validate JavaScript
+        run: |
+          for file in dist/*.js; do node --input-type=module --check < "$file"; done
+      - name: Validate offline file list
+        run: |
+          node -e '
+          const fs=require("fs");const list=JSON.parse(fs.readFileSync("dist/offline-files.json"));
+          const missing=list.filter(f=>f!=="./"&&!fs.existsSync("dist/"+f));
+          if(missing.length){console.error("Missing offline files:",missing);process.exit(1);}
+          console.log(list.length+" offline files present");'
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Exercise atlas and capture screenshots
+        run: node tests/browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: TERRA-atlas-screenshots
+          path: test-results/
+          if-no-files-found: ignore
+  windows-runtime:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install desktop dependencies
+        run: npm ci --prefix desktop
+      - name: Install test tools
+        run: npm install --no-save --package-lock=false playwright@1.62.1
+      - name: Test Windows desktop without building installers
+        run: node tests/desktop.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: TERRA-windows-runtime
+          path: test-results/
+          if-no-files-found: ignore

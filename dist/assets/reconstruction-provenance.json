@@ -1,0 +1,146 @@
+{
+  "retrieved": "2026-10-03",
+  "model": "ZAHIROVIC2022",
+  "anchor_plate_id": 0,
+  "model_timespan_ma": [
+    0,
+    410
+  ],
+  "snapshot_times_ma": [
+    0,
+    25,
+    50,
+    75,
+    100,
+    125,
+    150,
+    175,
+    200,
+    225,
+    250
+  ],
+  "description": "Reconstructed present-day coastline polygons at discrete ages, not accurate ancient paleoshorelines. Modern sea-level coastline shapes transported by plate rotations.",
+  "citation": "Zahirovic, S., Eleish, A., Doss, S., Pall, J., Cannon, J., Pistone, M., Tetley, M. G., Young, A., & Fox, P. (2022). Subduction kinematics and carbonate platform interactions. Geoscience Data Journal, 9(2), 371\u2013383. DOI: 10.1002/gdj3.146.",
+  "model_data_license": {
+    "id": "CC BY 4.0",
+    "confirmed_from": "Zenodo API metadata.license.id = cc-by-4.0",
+    "record": "https://zenodo.org/records/14188878",
+    "api": "https://zenodo.org/api/records/14188878",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "earthbyte_coastline_data_license": {
+    "id": "CC BY 3.0 Unported",
+    "source": "https://www.earthbyte.org/gplates-2-5-software-and-data-sets/",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "coastline_provenance": "EarthByte 2.5 documentation: Greenland from Danish Geological Survey, remainder World Vector Shoreline/GSHHG 2.3.7, simplified high-resolution coastline, cookie-cut by static plate polygons and oceanic volcanic province ages.",
+  "model_update_note": "GPlates docs say rotation file updated 2025-09-16 to latest Zenodo version; other model components unchanged.",
+  "source_pages": [
+    "https://gwsdoc.gplates.org/models/",
+    "https://gwsdoc.gplates.org/reconstruction/reconstruct-coastlines/",
+    "https://www.earthbyte.org/gplates-2-5-software-and-data-sets/"
+  ],
+  "download_method": "curl -sSL --fail --max-time 30 URL -o FILE. Downloads succeeded; all FeatureCollections parsed and contain Polygon geometries.",
+  "changes": "Added per-feature properties with age, model, anchor plate ID and source feature index, plus collection metadata. Coordinate arrays unchanged.",
+  "snapshots": [
+    {
+      "time_ma": 0,
+      "filename": "coastlines_0Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_0Ma.geojson",
+      "features": 2460,
+      "bytes": 1801468,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=0&model=ZAHIROVIC2022",
+      "sha256": "daed24a030a137b63dfa913ee14090691e9137272164dddac710bd1e0e21fc7e"
+    },
+    {
+      "time_ma": 25,
+      "filename": "coastlines_25Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_25Ma.geojson",
+      "features": 2226,
+      "bytes": 1703490,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=25&model=ZAHIROVIC2022",
+      "sha256": "44b42a0fd45e099bdf5cbef95339006bcb33a8b498150d5cf3eea78db78093c3"
+    },
+    {
+      "time_ma": 50,
+      "filename": "coastlines_50Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_50Ma.geojson",
+      "features": 2097,
+      "bytes": 1635363,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=50&model=ZAHIROVIC2022",
+      "sha256": "43598595526848865a67e18a9c7265f3e5de9f5af4c2eb74a933864ed4229aa8"
+    },
+    {
+      "time_ma": 75,
+      "filename": "coastlines_75Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_75Ma.geojson",
+      "features": 1933,
+      "bytes": 1535608,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=75&model=ZAHIROVIC2022",
+      "sha256": "01336f811ff5d53eb1a383ef3da5325cec851df049edf72ed36e832cd3b79f14"
+    },
+    {
+      "time_ma": 100,
+      "filename": "coastlines_100Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_100Ma.geojson",
+      "features": 1883,
+      "bytes": 1506781,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=100&model=ZAHIROVIC2022",
+      "sha256": "27115afedcf55ae1d34c8ba3fc273dd1b1a5cc555e091d612ceeef4b487d06ad"
+    },
+    {
+      "time_ma": 125,
+      "filename": "coastlines_125Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_125Ma.geojson",
+      "features": 1842,
+      "bytes": 1475171,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=125&model=ZAHIROVIC2022",
+      "sha256": "d0961466dc7b4fa01d01a888eeb57ec43c6910dcf5a20559762ba9d54e6fe14c"
+    },
+    {
+      "time_ma": 150,
+      "filename": "coastlines_150Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_150Ma.geojson",
+      "features": 1733,
+      "bytes": 1405555,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=150&model=ZAHIROVIC2022",
+      "sha256": "68542c844d3be4f6cfd9acbb4b5e37cce79ba07452096ecede8655048d454e1d"
+    },
+    {
+      "time_ma": 175,
+      "filename": "coastlines_175Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_175Ma.geojson",
+      "features": 1691,
+      "bytes": 1372376,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=175&model=ZAHIROVIC2022",
+      "sha256": "073e51b00474ff61a128561505c431c8125a5672872b4d97ec9c4f4715172b7c"
+    },
+    {
+      "time_ma": 200,
+      "filename": "coastlines_200Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_200Ma.geojson",
+      "features": 1686,
+      "bytes": 1370204,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=200&model=ZAHIROVIC2022",
+      "sha256": "4d6baa7edc55b114318872bd11ab2e2a72adcd600c0f66710a2ac61e25d4e440"
+    },
+    {
+      "time_ma": 225,
+      "filename": "coastlines_225Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_225Ma.geojson",
+      "features": 1640,
+      "bytes": 1346800,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=225&model=ZAHIROVIC2022",
+      "sha256": "4a477e502f96012dc1fd16a7d85884f3b6bb13f099a1f7ffa94e9d7b82a6c2ec"
+    },
+    {
+      "time_ma": 250,
+      "filename": "coastlines_250Ma.geojson",
+      "path": "/workspace/scratch/bd302c16c214/terra-assets/coastlines_250Ma.geojson",
+      "features": 1636,
+      "bytes": 1345176,
+      "source_url": "https://gws.gplates.org/reconstruct/coastlines/?time=250&model=ZAHIROVIC2022",
+      "sha256": "3e57207bbe2bd090e8519e34debff8e07757c5358661453bdcd9ac7966716c16"
+    }
+  ]
+}
