@@ -39,6 +39,7 @@ jobs:
           name: TERRA-atlas-screenshots
           path: test-results/
           if-no-files-found: ignore
+          retention-days: 1
   windows-runtime:
     runs-on: windows-latest
     timeout-minutes: 15
@@ -59,3 +60,4 @@ jobs:
           name: TERRA-windows-runtime
           path: test-results/
           if-no-files-found: ignore
+          retention-days: 1
