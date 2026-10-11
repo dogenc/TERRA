@@ -329,6 +329,6 @@ Beiträge aus Geologie, Geografie, Gestaltung und Lehre sind willkommen: fachlic
 
 **Große Zusammenhänge beginnen unter unseren Füßen.**<br>
 <sub>TERRA · DGKN@Labs · Atlas 03</sub><br>
-<sub>[CORPUS · Der Körper](https://github.com/dogenc/CORPUS-Anatomieatlas) &nbsp; / &nbsp; [CELLULA · Die Zelle](https://github.com/dogenc/CELLULA) &nbsp; / &nbsp; <b>TERRA · Die Erde</b> &nbsp; / &nbsp; [ELEMENTA · Die Materie](https://github.com/dogenc/ELEMENTA)</sub>
+<sub>[CORPUS · Der Körper](https://github.com/dogenc/CORPUS-Anatomieatlas) &nbsp; / &nbsp; [CELLULA · Die Zelle](https://github.com/dogenc/CELLULA) &nbsp; / &nbsp; <b>TERRA · Die Erde</b> &nbsp; / &nbsp; [ELEMENTA · Die Materie](https://github.com/dogenc/ELEMENTA) &nbsp; / &nbsp; [ASTRA · Das Universum](https://github.com/dogenc/ASTRA)</sub>
 
 </div>
